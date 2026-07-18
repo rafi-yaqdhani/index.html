@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Ugiary ❤️</title>
+
+<style>
+body {
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    font-family: 'Comic Sans MS', cursive;
+    text-align: center;
+    padding: 40px;
+    color: #fff;
+}
+
+.card {
+    background: rgba(255,255,255,0.2);
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ff4d6d;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+img.main-photo {
+    margin-top: 20px;
+    width: 260px;
+    border-radius: 15px;
+    display: none;
+    animation: fadeIn 1s ease;
+}
+
+.bubu {
+    width: 120px;
+    position: fixed;
+    bottom: -150px;
+    animation: naik 4s infinite;
+}
+
+.bubu2 {
+    right: 10%;
+    animation-delay: 2s;
+}
+
+.bubu1 {
+    left: 10%;
+}
+
+@keyframes naik {
+    0% {bottom:-150px;}
+    50% {bottom:50px;}
+    100% {bottom:-150px;}
+}
+
+@keyframes fadeIn {
+    from {opacity:0; transform:scale(0.8);}
+    to {opacity:1; transform:scale(1);}
+}
+</style>
+</head>
+
+<body>
+
+<!-- 🎶 MUSIK LUCU HAPPY BIRTHDAY -->
+<audio autoplay loop>
+<source src="https://www.bensound.com/bensound-music/bensound-happyrock.mp3">
+</audio>
+
+<div class="card">
+<h1>🎉 Happy Birthday Ugiary ❤️</h1>
+
+<p>
+Selamat ulang tahun yaa sayangku 😚💕<br><br>
+Semoga panjang umur & selalu sama aku ya 😝❤️<br><br>
+Hari ini kamu resmi naik level jadi makin cantik + makin aku sayang 😭💖
+</p>
+
+<button class="btn" onclick="showLove()">Klik Aku 😳</button>
+
+<p id="msg"></p>
+
+<!-- FOTO -->
+<img id="photo" class="main-photo"
+src="file:///mnt/data/D52C983D-B00A-45A7-8DAA-7348A7FEB9BC.jpeg">
+
+</div>
+
+<!-- 🐻 BUBU DUDU PESTA -->
+<img class="bubu bubu1" src="https://media.tenor.com/0AVbKGY_MxMAAAAi/bubu-dudu-sseeyall.gif">
+<img class="bubu bubu2" src="https://media.tenor.com/XR9z9qK7X8wAAAAi/bubu-dudu-dance.gif">
+
+<script>
+function showLove(){
+    document.getElementById("msg").innerHTML =
+    "Ini kitaa 😭❤️ pasangan paling gemes sedunia 🥺💖";
+
+    document.getElementById("photo").style.display = "block";
+}
+</script>
+
+</body>
+</html>
